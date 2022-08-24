@@ -1,0 +1,33 @@
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+.nav-block{
+  height: 60px;
+  width: 100%;
+  background-color: #01165c;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.nav-head a{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+ 
+}
+.nav-list{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 7px;
+}
+.nav-list a{
+  
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+ 
+
+}

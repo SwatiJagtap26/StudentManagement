@@ -1,0 +1,40 @@
+<!-- Sidebar Widgets Column -->
+      {{> home/sidebar}}
+<div class="student-conatiner">
+   
+    <h1>View Posts</h1>
+
+
+<table class="table table-borderd">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>File</th>
+            <th>Name</th>
+            <th>Courses</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each students}}
+        <tr>
+            <td>{{_id}}</td>
+            <td><img height="50px" class="img-responsive" src="/uploads/{{file}}" alt=" " ></td>
+           
+           <td>{{name}}</td>
+            <td>{{courses}}</td>
+            <td>{{mobile}}</td>
+            <td>{{address}}</td>
+            
+            
+               
+           
+       
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>

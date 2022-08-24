@@ -1,0 +1,195 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "student management system",
+      "description": "",
+      "version": "1.0.1"
+    },
+    "produces": ["application/json"],
+    "paths": {
+      "/login": {
+        "get": {
+        
+          "tags": ["home"],
+          "description": "enter user details",
+          "parameters": [{
+            "name": "Login credentials",
+            "in": "formData",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+             }
+          }
+],
+
+          "responses": {}
+        },
+
+        
+        "post": {
+        
+          "tags": ["home"],
+          "description": "enter user details",
+          "schema":"",
+          "parameters": [{
+            "name": "Login credentials",
+            "in": "formData",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+             }
+          },
+        { "name": "email", "in": "formData", "required": true, "type": "string" },
+        { "name": "password", "in": "formData", "type": "string", "required": "true" }],
+
+          "responses": {}
+        }
+      },
+      "/register": {
+        "get": {
+        
+          "tags": ["home"],
+          "description": "enter student details for registering",
+          "parameters": [{
+            "name": "registering credentials",
+            "in": "formData",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+             }
+          }
+],
+
+          "responses": {}
+        },
+
+        "post": {
+        
+          "tags": ["home"],
+          "description": "enter student details for registering",
+          "parameters": [{
+            "name": "Register credentials",
+            "in": "formData",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+             }
+          },
+          { "name": "First Name", "in": "formData", "required": true, "type": "string" },
+          { "name": "Last Name", "in": "formData", "required": true, "type": "string" },
+          { "name": "email", "in": "formData", "required": true, "type": "string" },
+          { "name": "password", "in": "formData", "type": "string", "required": "true" }],
+
+          "responses": {}
+        }
+      },
+
+      
+
+
+
+      "/student": {
+         "get": {
+           
+           "tags": ["student"],
+           "description": " Welcome to student page",
+           "parameters": [
+            {
+              "name": "welcome page",
+              "in": "formData",
+              "type": "array",
+              "collectionFormat": "multi",
+              "items": {
+                "type": "string"
+               }
+            }
+           ],
+           "responses": {}
+         }
+       },
+
+      "/student/create":{
+        "post" :{
+          
+          "tags": ["student"],
+          "description": "enter student details form for registering course",
+          "parameters": [{
+            "name": "Register credentials",
+            "in": "formData",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+             }
+          },
+          { "name": " Name", "in": "formData", "required": true, "type": "string" },
+          { "name": "Mobile", "in": "formData", "required": true, "type": "number" },
+          { "name": "email", "in": "formData", "required": true, "type": "string" },
+          { "name": "address", "in": "formData", "type": "string", "required": "true" },
+          { "name": "file", "in": "formData", "type": "file", "required": "true" }],
+
+          "responses": {}
+         }
+      },
+
+
+
+
+
+       "/admin": {
+        "get": {
+
+          "tags": ["admin"],
+          "description": "Welcome to admin page",
+          "parameters": [],
+          "responses": {}
+        }
+      },
+      "/admin/allDetails": {
+        "get": {
+
+          "tags": ["admin"],
+          "description": "Welcome to all student details page",
+          "parameters": [],
+          "responses": {}
+        }
+      },
+      "/admin/edit/{_id}": {
+        "delete": {
+
+          "tags": ["admin"],
+          "description": "Welcome to all student details page",
+          "parameters": [],
+          "responses": {}
+        }
+        
+
+      },
+      "/admin/profile/6304746657bec603e0607fba": {
+        "get": {
+
+          "tags": ["admin"],
+          "description": "Welcome to id student details page",
+          "parameters": [{
+            "name": "id",
+            "in":"query",
+            "description":"User Id"
+          }],
+          "responses": {}
+        }
+
+      }
+
+
+
+
+
+
+
+
+    }
+ }

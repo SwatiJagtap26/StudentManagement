@@ -1,0 +1,43 @@
+.index-main{
+    height: 500px;
+    width: 100%;
+    background: url(../images/girl-study.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% ;
+}
+.header{
+    text-align: center;
+    color: black;
+    padding: 50px;
+    font-size: 30px;
+   
+    
+
+}
+.header h1{
+    color: rgb(24, 6, 105);
+    
+    font-size: 2em;
+   
+    
+}
+.index-container{
+   margin: 50px ;
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   
+}
+.index-subcontainer{
+    height: 220px;
+    width: 280px;
+    border: 2px solid #0c2864;
+    padding: 10px;
+    color: #B9005B;
+    border-radius: 5px;
+    
+}
+.icon{
+    font-size: 2.5em;
+}

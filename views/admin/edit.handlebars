@@ -1,0 +1,92 @@
+
+<div class="student-conatiner">
+      <h1>edit Student Contact Details</h1>
+ 
+<form action="/admin/edit/{{student._id}}?_method=PUT" method="post" enctype="multipart/form-data" >
+  <div class="form-group">
+    <label for="title">Name</label>
+    <input
+       
+      name="name"
+      type="text"
+      class="form-control"
+      id="name"
+      value="{{student.name}}"
+      
+    />
+  </div>
+  <div>
+    <label for="title">Mobile</label>
+    <input
+    
+      name="mobile"
+      type="number"
+      class="form-control"
+      id="mobile"
+     value="{{student.mobile}}"
+      
+    />
+    </div>
+     <div>
+    <label for="title">Email</label>
+    <input
+    
+      name="email"
+      type="email"
+      class="form-control"
+      id="email"
+      value="{{student.email}}"
+      
+    />
+    </div>
+     <div>
+    <label for="address">Address</label>
+    <input
+    
+      name="address"
+      type="text"
+      class="form-control"
+      id="text"
+      value="{{student.address}}"
+      
+    />
+    </div>
+  
+   <div class="form-group">
+    <label for="file">Profile photo Upload</label>
+    <input
+    
+      name="file"
+      type="file"
+      class="form-control"
+      value="{{student.file}}"
+      
+    />
+  </div>
+    
+    
+  <div class="form-group">
+    <label for="title">Courses</label>
+    <select name="courses" id="status" class="form-control">
+      {{#select student.courses}}
+      <option value="nodejs">Nodejs</option>
+      <option value="reactjs">Reactjs</option>
+      <option value="angular">Angular</option>
+      {{/select}}
+    </select>
+  </div>
+  
+ 
+  
+<br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+
+
+
+
+

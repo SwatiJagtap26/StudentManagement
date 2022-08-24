@@ -1,0 +1,94 @@
+
+<div class="student-conatiner">
+      <h1>Create Student Contact Details from admin</h1>
+ {{#each errors}}
+ <div class="alert alert-danger">
+  {{message}}
+ </div>
+ 
+ {{/each}}
+<form action="/admin/create" method="post" enctype="multipart/form-data" >
+  <div class="form-group">
+    <label for="title">Name</label>
+    <input
+    
+      name="name"
+      type="text"
+      class="form-control"
+      id="name"
+      placeholder="Enter Your Full Name"
+      
+    />
+  </div>
+  <div>
+    <label for="title">Mobile</label>
+    <input
+    
+      name="mobile"
+      type="number"
+      class="form-control"
+      id="mobile"
+      placeholder="Enter your mobile number"
+      
+    />
+    </div>
+     <div>
+    <label for="title">Email</label>
+    <input
+    
+      name="email"
+      type="email"
+      class="form-control"
+      id="email"
+      placeholder="Enter your email address"
+      
+    />
+    </div>
+     <div>
+    <label for="address">Address</label>
+    <input
+    
+      name="address"
+      type="text"
+      class="form-control"
+      id="text"
+      placeholder="Enter your address"
+      
+    />
+    </div>
+  
+   <div class="form-group">
+    <label for="file">Profile photo Upload</label>
+    <input
+    
+      name="file"
+      type="file"
+      class="form-control"
+      
+    />
+  </div>
+    
+
+  <div class="form-group">
+    <label for="title">Courses</label>
+    <select name="courses" id="status" class="form-control">
+      <option value="nodejs">Nodejs</option>
+      <option value="reactjs">Reactjs</option>
+      <option value="angular">Angular</option>
+    </select>
+  </div>
+  
+ 
+  
+<br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+
+
+
+
+

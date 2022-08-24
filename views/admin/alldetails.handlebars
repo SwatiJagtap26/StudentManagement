@@ -1,0 +1,53 @@
+
+
+<div class="student-conatiner">
+      <h1>All Student Contact Details</h1>
+ {{> home/form-msgs}}
+<table class="table table-borderd">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>File</th>
+            <th>Name</th>
+            <th>Courses</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            
+            
+
+        </tr>
+    </thead>
+    <tbody>
+      {{!-- for creating multiple records used array each --}}
+        {{#each students}}
+        <tr>
+            <td>{{_id}}</td>
+            <td><img height="50px" class="img-responsive" src="/uploads/{{file}}" alt=" " ></td>
+            
+            <td>{{name}}</td>
+            <td>{{courses}}</td>
+            <td>{{mobile}}</td>
+            <td>{{address}}</td>
+            <td><a href="/admin/profile/{{_id}}">View</a></td>
+            <td>
+                <a href="/admin/edit/{{_id}}" class="btn btn-info">Edit</a>
+            </td>
+            <td>
+                <form action="/admin/edit/{{_id}}?_method=DELETE" method="post">
+                   <button type="submit" class="btn btn-danger">Delete</button>
+               </form>
+            </td>
+             
+            
+       
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+

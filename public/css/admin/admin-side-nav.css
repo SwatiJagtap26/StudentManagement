@@ -1,0 +1,17 @@
+
+.adminbox{
+    position: absolute;
+    background-color: #002B5B;
+    width: 250px;
+   color: white;
+   font: 1em sans-serif;
+   padding: 30px;
+   height: 580px;
+   margin-left: 10px;
+ 
+
+  
+}
+.adminHead{
+    font-size: 30px;
+}

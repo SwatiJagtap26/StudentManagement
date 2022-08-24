@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     {{!-- font awoesome --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   {{!-- css link --}}
+          <link href="/css/footer.css" rel="stylesheet">
+            <link href="/css/student/footerStudent.css" rel="stylesheet">
+            
+   <link href="/css/admin/admin-nav.css" rel="stylesheet">
+   <link href="/css/admin/admin-side-nav.css" rel="stylesheet" >
+   <link href="/css/admin/index.css" rel="stylesheet" >
+   <link href="/css/admin/alldetails.css" rel="stylesheet" >
+    {{!-- boostrap --}}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       {{> admin/admin-nav}}
+      
+      
+    </div>
+     
+     {{> admin/admin-side-nav}}
+      <div class="container">
+        
+            {{!-- flash message --}}
+            {{> home/form-msgs}}
+            </div>
+         {{{body}}}
+     {{!-- {{> home/footer}} --}}
+</body>
+</html>
